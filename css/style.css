@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'HKGrotesk-Light';
+    src: url('../fonts/hk-grotesk-light/hk-grotesk-light.eot');
+    src: url('../fonts/hk-grotesk-light/hk-grotesk-light.eot?iefix') format('eot'),
+    url('../fonts/hk-grotesk-light/hk-grotesk-light.woff') format('woff'),
+    url('../fonts/hk-grotesk-light/hk-grotesk-light.ttf') format('truetype'),
+    url('../fonts/hk-grotesk-light/hk-grotesk-light.svg#webfont') format('svg');
+}
+
+@font-face {
+    font-family: 'LeagueSpartan-Bold';
+    src: url('../fonts/league-spartan-bold/league-spartan-bold.eot');
+    src: url('../fonts/league-spartan-bold/league-spartan-bold.eot?iefix') format('eot'),
+    url('../fonts/league-spartan-bold/league-spartan-bold.woff') format('woff'),
+    url('../fonts/league-spartan-bold/league-spartan-bold.ttf') format('truetype'),
+    url('../fonts/league-spartan-bold/league-spartan-bold.svg#webfont') format('svg');
+}
+
+body {
+    background-color: #272f45;
+}
+
+.page-wrap {
+    max-width: 1160px;
+    margin: 63px auto 70px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.header-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-link__logo {
+    width: 294px;
+    height: 72px;
+}
+
+.search {
+    display: flex;
+    align-self: center;
+    border-bottom: 3px solid #63757e;
+    padding-bottom: 8px;
+}
+
+.search__icon {
+    width: 22px;
+    height: 23px;
+    background: transparent url("../img/search.png") no-repeat;
+    border: none;
+    padding: 0;
+    margin-right: 9px;
+    cursor: pointer;
+}
+
+.search__icon, .search__input:focus {
+    outline: none;
+}
+
+.search input::placeholder {
+    font: 24px "HKGrotesk-Light", sans-serif;
+    color: #92a1a9;
+}
+
+.search__input {
+    width: 145px;
+    border: none;
+    background-color: transparent;
+    font: 24px "HKGrotesk-Light", sans-serif;
+    color: #92a1a9;
+    height: 24px;
+    padding: 0;
+    overflow: hidden;
+}
+
