@@ -78,3 +78,108 @@ body {
     overflow: hidden;
 }
 
+.products {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.product-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-item-size-for-one {
+    width: 1160px;
+    height: 690px;
+}
+
+.product-item-size-for-two {
+    width: 560px;
+    height: 520px;
+}
+
+.product-item-size-for-three {
+    width: 360px;
+    height: 440px;
+}
+
+.product-item_bg-coffee-instrument {
+    background-color: #aebbc0;
+}
+
+.product-item_bg-beoplay {
+    background-color: #60b8a3;
+}
+
+.product-item_bg-photography {
+    background-color: #7778c6;
+}
+
+.product-item_bg-molekule {
+    background-color: #e97864;
+}
+
+.product-item_bg-signature {
+    background-color: #557581;
+}
+
+.product-item_bg-braun-dr {
+    background-color: #82c9d8;
+}
+
+.product-img-coffee-instrument {
+    width: 1160px;
+    height: 690px;
+}
+
+.product-img-beoplay {
+    width: 667px;
+    height: 800px;
+    top: -80px;
+    right: 0;
+}
+
+.product-img-photography {
+    width: 522px;
+    height: 328px;
+    bottom: -48px;
+    right: -100px;
+}
+
+.product-img-molekule {
+    width: 400px;
+    height: 670px;
+    top: 253px;
+    left: -20px;
+}
+
+.product-img-signature {
+    width: 767px;
+    height: 468px;
+    right: -85px;
+    bottom: 128px;
+}
+
+.product-img-braun-dr {
+    width: 303px;
+    height: 316px;
+}
+
+.product-item__img {
+    position: absolute;
+}
+
+.product-item__badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.info {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
