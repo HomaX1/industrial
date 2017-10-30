@@ -16,6 +16,12 @@
     url('../fonts/league-spartan-bold/league-spartan-bold.svg#webfont') format('svg');
 }
 
+h2, h3, h4,
+p, button {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #272f45;
 }
@@ -85,6 +91,7 @@ body {
 }
 
 .product-item {
+    display: flex;
     position: relative;
     overflow: hidden;
 }
@@ -164,6 +171,8 @@ body {
 .product-img-braun-dr {
     width: 303px;
     height: 316px;
+    bottom: -122px;
+    left: 29px;
 }
 
 .product-item__img {
@@ -172,14 +181,129 @@ body {
 
 .product-item__badge {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 35px;
+    right: 35px;
     z-index: 2;
 }
 
 .info {
     position: absolute;
-    top: 0;
     z-index: 2;
+    color: #fff;
+    overflow: hidden;
 }
 
+.info__title {
+    text-transform: uppercase;
+    font-family: "LeagueSpartan-Bold", sans-serif;
+}
+
+h2.info__title {
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+h3.info__title {
+    font-size: 48px;
+    margin-bottom: 13px;
+}
+
+h4.info__title {
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+}
+
+.info__text {
+    font-family: "HKGrotesk-Light", sans-serif;
+}
+
+.info__text_size-for-one {
+    font-size: 32px;
+    margin-bottom: 137px;
+}
+
+.info__text_size-for-two {
+    font-size: 24px;
+    margin-bottom: 63px;
+}
+
+.info__text_size-for-three {
+    font-size: 16px;
+}
+
+.info__button {
+    text-transform: uppercase;
+    width: 114px;
+    height: 42px;
+    font: 18px "LeagueSpartan-Bold", sans-serif;
+    color: #fff;
+    border: 3px solid #eec9a2;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.info__button:focus {
+    outline: none;
+}
+
+button.info__button {
+    line-height: 42px;
+}
+
+.info-button-for-one {
+    text-transform: capitalize;
+    width: 154px;
+    height: 54px;
+    line-height: 54px;
+    font: 24px "HKGrotesk-Light", sans-serif;
+}
+
+.info-for-one {
+    width: 365px;
+    top: 110px;
+    left: 60px;
+}
+
+.info-for-two {
+    width: 445px;
+    top: 63px;
+    padding-top: 1px;
+}
+
+.info-for-three {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 68px;
+    overflow: hidden;
+}
+
+.info-for-three .info__title,
+.info-for-three .info__text {
+    padding: 0 5px;
+}
+
+.product-img-beoplay ~ .info-for-two {
+    text-align: right;
+    right: 30px;
+}
+
+.product-img-photography ~ .info-for-two {
+    text-align: left;
+    left: 30px;
+}
+
+.align-self-end {
+    bottom: 36px;
+}
+
+.info-for-three .info__title {
+    order: 2;
+}
+
+.info-for-three .info__button {
+    order: 3;
+}
