@@ -28,7 +28,8 @@ body {
 
 .page-wrap {
     max-width: 1160px;
-    margin: 63px auto 70px;
+    margin: 63px auto;
+    padding-bottom: 70px;
 }
 
 .header {
@@ -88,6 +89,10 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+}
+
+.products:last-child {
+    margin-bottom: 0;
 }
 
 .product-item {
