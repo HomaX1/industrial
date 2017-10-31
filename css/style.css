@@ -63,7 +63,7 @@ body {
     padding: 0;
     margin-right: 9px;
     cursor: pointer;
-    transition: opacity 0.1s;
+    transition: opacity .1s;
 }
 
 .search__icon:hover {
@@ -75,6 +75,11 @@ body {
 }
 
 .search input::placeholder {
+    font: 24px "HKGrotesk-Light", sans-serif;
+    color: #92a1a9;
+}
+
+.search input.search__input::-webkit-input-placeholder {
     font: 24px "HKGrotesk-Light", sans-serif;
     color: #92a1a9;
 }
@@ -256,7 +261,7 @@ h4.info__title {
     background-color: transparent;
     overflow: hidden;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color .2s;
 }
 
 .info__button:hover {
@@ -395,7 +400,7 @@ button.info__button {
     text-transform: capitalize;
     font: 24px "HKGrotesk-Light", sans-serif;
     color: #92a1a9;
-    transition: color 0.1s;
+    transition: color .1s;
 }
 
 .footer-nav__item:hover {
