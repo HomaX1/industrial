@@ -1,5 +1,6 @@
 @font-face {
-    font-family: 'HKGrotesk-Light';
+    font-family: 'HKGrotesk';
+    font-weight: 300;
     src: url('../fonts/hk-grotesk-light/hk-grotesk-light.eot');
     src: url('../fonts/hk-grotesk-light/hk-grotesk-light.eot?iefix') format('eot'),
     url('../fonts/hk-grotesk-light/hk-grotesk-light.woff') format('woff'),
@@ -8,7 +9,8 @@
 }
 
 @font-face {
-    font-family: 'LeagueSpartan-Bold';
+    font-family: 'LeagueSpartan';
+    font-weight: 700;
     src: url('../fonts/league-spartan-bold/league-spartan-bold.eot');
     src: url('../fonts/league-spartan-bold/league-spartan-bold.eot?iefix') format('eot'),
     url('../fonts/league-spartan-bold/league-spartan-bold.woff') format('woff'),
@@ -23,6 +25,7 @@ p, button {
 }
 
 body {
+    font: 24px 'HKGrotesk', sans-serif;
     background-color: #272f45;
 }
 
@@ -75,12 +78,10 @@ body {
 }
 
 .search input::placeholder {
-    font: 24px "HKGrotesk-Light", sans-serif;
     color: #92a1a9;
 }
 
 .search input.search__input::-webkit-input-placeholder {
-    font: 24px "HKGrotesk-Light", sans-serif;
     color: #92a1a9;
 }
 
@@ -88,10 +89,10 @@ body {
     width: 145px;
     border: none;
     background-color: transparent;
-    font: 24px "HKGrotesk-Light", sans-serif;
+    font-family: 'HKGrotesk', sans-serif;
     color: #92a1a9;
     height: 24px;
-    padding: 0;
+    padding: 0 0 1px;
     overflow: hidden;
 }
 
@@ -115,79 +116,79 @@ body {
     overflow: hidden;
 }
 
-.product-item-size-for-one {
+.product-item-size-for-one-img {
     width: 1160px;
     height: 690px;
 }
 
-.product-item-size-for-two {
+.product-item-size-for-two-img {
     width: 560px;
     height: 520px;
 }
 
-.product-item-size-for-three {
+.product-item-size-for-three-img {
     width: 360px;
     height: 440px;
 }
 
-.product-item_bg-coffee-instrument {
+.product-item_bg-for-one-img {
     background-color: #aebbc0;
 }
 
-.product-item_bg-beoplay {
+.product-item_bg-one-of-duet {
     background-color: #60b8a3;
 }
 
-.product-item_bg-photography {
+.product-item_bg-one-duet {
     background-color: #7778c6;
 }
 
-.product-item_bg-molekule {
+.product-item_bg-one-of-trio {
     background-color: #e97864;
 }
 
-.product-item_bg-signature {
+.product-item_bg-one-trio {
     background-color: #557581;
 }
 
-.product-item_bg-braun-dr {
+.product-item_bg-img-of-trio {
     background-color: #82c9d8;
 }
 
-.product-img-coffee-instrument {
+.product-img-for-one-img {
     width: 1160px;
     height: 690px;
 }
 
-.product-img-beoplay {
-    width: 667px;
-    height: 800px;
-    top: -80px;
-    right: 0;
+.product-img-one-of-duet {
+    width: 479px;
+    height: 531px;
+    top: 188px;
+    left: -100px;
 }
 
-.product-img-photography {
+.product-img-one-duet {
     width: 522px;
     height: 328px;
     bottom: -48px;
     right: -100px;
 }
 
-.product-img-molekule {
+.product-img-one-of-trio {
     width: 400px;
     height: 670px;
     top: 253px;
     left: -20px;
 }
 
-.product-img-signature {
-    width: 767px;
-    height: 468px;
-    right: -85px;
+.product-img-one-trio {
+    width: 430px;
+    height: 395px;
+    left: -39px;
     bottom: 128px;
 }
 
-.product-img-braun-dr {
+.product-img-of-trio {
     width: 303px;
     height: 316px;
     bottom: -122px;
@@ -214,89 +215,95 @@ body {
 
 .info__title {
     text-transform: uppercase;
-    font-family: "LeagueSpartan-Bold", sans-serif;
+    font-family: 'LeagueSpartan', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-h2.info__title {
+.info-for-one-img .info__title {
     font-size: 80px;
     margin-bottom: 25px;
 }
 
-h3.info__title {
+.info-for-two-img .info__title {
     font-size: 48px;
+    padding-top: 1px;
     margin-bottom: 13px;
 }
 
-h4.info__title {
+.info-for-three-img .info__title {
     font-size: 36px;
     margin-top: 15px;
     margin-bottom: 22px;
 }
 
-.info__text {
-    font-family: "HKGrotesk-Light", sans-serif;
-}
-
-.info__text_size-for-one {
+.info__text_size-for-one-img {
     font-size: 32px;
     margin-bottom: 137px;
 }
 
-.info__text_size-for-two {
+.info__text_size-for-two-img {
     font-size: 24px;
     margin-bottom: 63px;
 }
 
-.info__text_size-for-three {
+.info__text_size-for-three-img {
     font-size: 16px;
 }
 
-.info__button {
+.info__link {
+    text-decoration: none;
     text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
     width: 114px;
     height: 42px;
-    font: 18px "LeagueSpartan-Bold", sans-serif;
+    font: 18px 'LeagueSpartan', sans-serif;
     color: #fff;
     border: 3px solid #eec9a2;
-    background-color: transparent;
     overflow: hidden;
     cursor: pointer;
-    transition: background-color .2s;
+    transition: background-color .2s, color .2s;
 }
 
-.info__button:hover {
-    background-color: #eec9a2;
-}
-
-.info__button:focus {
-    outline: none;
-}
-
-button.info__button {
-    line-height: 42px;
-}
-
-.info-button-for-one {
+.info-link-for-one-img {
     text-transform: capitalize;
     width: 154px;
     height: 54px;
-    line-height: 54px;
-    font: 24px "HKGrotesk-Light", sans-serif;
+    font: 24px 'HKGrotesk', sans-serif;
+    transition: font .2s, text-transform .2s;
 }
 
-.info-for-one {
+.info__link:hover {
+    background-color: #eec9a2;
+    color: #000;
+}
+
+.info-link-for-one-img:hover {
+    text-transform: uppercase;
+    font: 18px 'LeagueSpartan', sans-serif;
+}
+
+.info .info__link.info-link-for-one-img {
+    line-height: 54px;
+}
+
+.info .info__link {
+    line-height: 42px;
+}
+
+.info-for-one-img {
     width: 365px;
-    top: 110px;
+    top: 105px;
     left: 60px;
 }
 
-.info-for-two {
+.info-for-two-img {
     width: 445px;
     top: 63px;
-    padding-top: 1px;
 }
 
-.info-for-three {
+.info-for-three-img {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -305,17 +312,17 @@ button.info__button {
     overflow: hidden;
 }
 
-.info-for-three .info__title,
-.info-for-three .info__text {
+.info-for-three-img .info__title,
+.info-for-three-img .info__text {
     padding: 0 5px;
 }
 
-.product-img-beoplay ~ .info-for-two {
+.product-img-one-of-duet ~ .info-for-two-img {
     text-align: right;
     right: 30px;
 }
 
-.product-img-photography ~ .info-for-two {
+.product-img-one-duet ~ .info-for-two-img {
     text-align: left;
     left: 30px;
 }
@@ -324,11 +331,11 @@ button.info__button {
     bottom: 36px;
 }
 
-.info-for-three .info__title {
+.info-for-three-img .info__title {
     order: 2;
 }
 
-.info-for-three .info__button {
+.info-for-three-img .info__link {
     order: 3;
 }
 
@@ -343,62 +350,77 @@ button.info__button {
 .footer-text {
     width: 810px;
     text-align: center;
-    font: 18px "HKGrotesk-Light", sans-serif;
+    font-size: 18px;
     color: #7f919b;
     margin-bottom: 50px;
 }
 
-.footer-text__item:first-child {
+.footer-text-title {
     font-size: 36px;
     color: #92a1a9;
     margin-bottom: 20px;
 }
 
-.buttons {
+.user-info {
     margin-bottom: 103px;
 }
 
-.buttons .buttons__item {
+.user-info .user-info__item {
     line-height: 54px;
 }
 
-.buttons__item {
+.user-info__item {
+    text-transform: uppercase;
     display: block;
     width: 354px;
     height: 54px;
-    font: 24px "HKGrotesk-Light", sans-serif;
-    color: #92a1a9;
-    border: 3px solid #63757e;
+    font: 18px 'LeagueSpartan', sans-serif;
+    color: #fff;
+    border: 3px solid #82c9d8;
     background-color: transparent;
-    margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
 }
 
-.buttons__item:last-child {
-    margin-bottom: 0;
+.user-info-input {
+    width: 348px;
+    text-transform: none;
+    text-align: center;
+    font: 24px 'HKGrotesk', sans-serif;
+    color: #92a1a9;
+    border: 3px solid #63757e;
+    margin-bottom: 20px;
 }
 
-.buttons__item:hover {
-    text-transform: uppercase;
-    font: 18px "LeagueSpartan-Bold", sans-serif;
-    color: #fff;
+.user-info-input:focus {
+    outline: none;
     border: 3px solid #82c9d8;
+}
+
+.user-info-input:hover {
+    border: 3px solid #82c9d8;
+}
+
+.user-info input::placeholder {
+    color: #92a1a9;
+}
+
+.user-info input.user-info-input::-webkit-input-placeholder {
+    color: #92a1a9;
 }
 
 .footer-nav {
     display: flex;
     width: 810px;
     justify-content: center;
-    align-items: center;
     margin-bottom: 33px;
+    white-space: nowrap;
     overflow: hidden;
 }
 
 .footer-nav__item {
     text-decoration: none;
     text-transform: capitalize;
-    font: 24px "HKGrotesk-Light", sans-serif;
     color: #92a1a9;
     transition: color .1s;
 }
@@ -407,22 +429,26 @@ button.info__button {
     color: #fff;
 }
 
-.footer-nav__text-separator {
+.footer-nav__item::after {
+    content: '';
     display: inline-block;
     width: 5px;
     height: 5px;
     background-color: #92a1a9;
     border-radius: 50%;
     margin: 0 15px;
+    vertical-align: middle;
 }
 
-.copyright-blog {
+.footer-nav__item:last-child::after {
+    display: none;
+}
+
+.footer__text-copyright {
     text-transform: capitalize;
-    width: auto;
-    display: flex;
-    margin-bottom: 0;
-}
-
-.footer-text__copyright {
-    margin-right: 5px;
+    width: 810px;
+    text-align: center;
+    font-size: 18px;
+    color: #7f919b;
+    overflow: hidden;
 }
